@@ -17,8 +17,8 @@
         --paragraph-font: 'Roboto Mono';
 
         /* COLORS */
-        --primary-color: 'black';
-        --secondary-color: 'black';
+        --primary-color: black;
+        --secondary-color: grey;
 
         /* H1 STYLE */
         --h1-font-size: 1.3rem;
@@ -27,15 +27,86 @@
         --h2-font-size: 1rem;
 
         /* PARAGRAPH STYLE */
-        --paragraph-font: 'Roboto Mono';
+        --paragraph-size: 1rem;
 
 
     }
     /* HEADER */
+
+    /* HEADER STYLING */
+    header {
+        background-color: white;
+        padding: var(--spacing) 0;
+    }
+    
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 var(--spacing);
+        font-family: var(--menu-font);
+    }
+  
     /* HEADER MEDIA QUERY */
     /* HEADER KEYFRAME ANIMATIONS */
     /* MAIN */
+    .intro h1 {
+        font-family: var(--heading-font);
+        font-size: calc(var(--h1-font-size) * 1.5);
+        font-weight: bold;
+        margin-bottom: var(--spacing);
+        text-align: center;
+        }
+    
+        .intro p {
+        text-align: center;
+        padding: var(--spacing);
+    }  
+                     
+    .cta-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing);
+        padding: var(--spacing);
+    }
+    
+    .cta-buttons a.btn {
+        display: inline-block;
+        padding: var(--spacing);
+        background-color: white;
+        color: var(--primary-color);
+        text-decoration: none;
+        border: 2px solid var(--primary-color);
+        border-radius: 4px;
+        text-align: center;
+        font-family: var(--menu-font);
+        font-size: var(--paragraph-size);
+        transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+      }
+      
+      .cta-buttons a.btn:hover,
+      .cta-buttons a.btn:focus {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        transform: translateY(-2px);
+      }
+      
     /* MAIN MEDIA QUERY */
+    @media (min-width: 1280px) {
+    .intro h1 {
+        font-family: var(--heading-font);
+        font-size: calc(var(--h1-font-size) * 1.5);
+        font-weight: bold;
+        margin-bottom: var(--spacing);
+        }
+    
+        .intro p {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding: var(--spacing);
+        }
+    }
     /* MAIN KEYFRAME ANIMATIONS */
     /* FOOTER */
     /* FOOTER MEDIA QUERY */
