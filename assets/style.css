@@ -1,9 +1,36 @@
 /* CHECKLIST */
-    /* ADD FONT FILES */
     /* MOBILE FIRST */
     /* RESPONSIVE MIN-WIDTH 375px, 768px, 1280px (INSERT WITHIN MAIN SECTIONS) */
-    /* SET VARIABLES */
     /* USE CALC */
+    /* ADD FONT FILES */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+    /* SET VARIABLES */
+    :root {
+        /* GENERAL */
+        --spacing: 1.25rem;
+
+        /* FONT IN USE */
+        --menu-font: 'Roboto Mono';
+        --heading-font: 'Roboto Mono';
+        --subheading-font: 'Roboto Mono';
+        --paragraph-font: 'Roboto Mono';
+
+        /* COLORS */
+        --primary-color: 'black';
+        --secondary-color: 'black';
+
+        /* H1 STYLE */
+        --h1-font-size: 1.3rem;
+
+        /* H2 STYLE */
+        --h2-font-size: 1rem;
+
+        /* PARAGRAPH STYLE */
+        --paragraph-font: 'Roboto Mono';
+
+
+    }
     /* HEADER */
     /* HEADER MEDIA QUERY */
     /* HEADER KEYFRAME ANIMATIONS */
