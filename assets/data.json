@@ -1,0 +1,38 @@
+[
+  {
+    "Liquor": "Whiskey",
+    "Glassware": "Coupe",
+    "Cocktail": "Manhattan",
+    "Garnish": "Maraschino Cherry",
+    "Illustration": "",
+    "Learn More": "The Manhattan has managed to remain one of the most popular cocktails in the world for well over a century. A cominination of whiskey, sweet vermouth, bitters and a maraschino cherry garnish, this drink embodies the classic, spirit-forward, and aromatic school of cocktails.",
+    "Recipe": "ICE CUBES\nWHISKEY\nSWEET VERMOUTH\n2 DASHES OF ANGOSTURA BITTER"
+  },
+  {
+    "Liquor": "Whiskey",
+    "Glassware": "Coupe",
+    "Cocktail": "Manhattan",
+    "Garnish": "Lemon",
+    "Illustration": "",
+    "Learn More": "The Manhattan has managed to remain one of the most popular cocktails in the world for well over a century. A cominination of whiskey, sweet vermouth, bitters and a maraschino cherry garnish, this drink embodies the classic, spirit-forward, and aromatic school of cocktails.",
+    "Recipe": "ICE CUBES\nWHISKEY\nSWEET VERMOUTH\n2 DASHES OF ANGOSTURA BITTER"
+  },
+  {
+    "Liquor": "Whiskey",
+    "Glassware": "Rocks",
+    "Cocktail": "Manhattan",
+    "Garnish": "Maraschino Cherry",
+    "Illustration": "",
+    "Learn More": "The Manhattan has managed to remain one of the most popular cocktails in the world for well over a century. A cominination of whiskey, sweet vermouth, bitters and a maraschino cherry garnish, this drink embodies the classic, spirit-forward, and aromatic school of cocktails.",
+    "Recipe": "ICE CUBES\nWHISKEY\nSWEET VERMOUTH\n2 DASHES OF ANGOSTURA BITTER"
+  },
+  {
+    "Liquor": "Whiskey",
+    "Glassware": "Rocks",
+    "Cocktail": "Manhattan",
+    "Garnish": "Lemon",
+    "Illustration": "",
+    "Learn More": "The Manhattan has managed to remain one of the most popular cocktails in the world for well over a century. A cominination of whiskey, sweet vermouth, bitters and a maraschino cherry garnish, this drink embodies the classic, spirit-forward, and aromatic school of cocktails.",
+    "Recipe": "ICE CUBES\nWHISKEY\nSWEET VERMOUTH\n2 DASHES OF ANGOSTURA BITTER"
+  }
+]
