@@ -4,97 +4,139 @@
     "Glassware": "Coupe",
     "Cocktail": "Manhattan",
     "Garnish": "Maraschino Cherry",
-    "Illustration": "assets/svg/Whiskey-Garnish-Maraschino-Cherry.svg"
+    "Step1_Liquor_Img": "assets/svg/Whiskey.svg",
+    "Step2_Glassware_Img": "assets/svg/Whiskey-Coupe.svg",
+    "Step3_Cocktail_Img": "assets/svg/Whiskey-Manhattan.svg",
+    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Garnish-Maraschino-Cherry.svg"
   },
   {
     "Liquor": "Whiskey",
     "Glassware": "Coupe",
     "Cocktail": "Manhattan",
     "Garnish": "Lemon Peel",
-    "Illustration": "assets/svg/Whiskey-Garnish-Lemon.svg"
+    "Step1_Liquor_Img": "assets/svg/Whiskey.svg",
+    "Step2_Glassware_Img": "assets/svg/Whiskey-Coupe.svg",
+    "Step3_Cocktail_Img": "assets/svg/Whiskey-Manhattan.svg",
+    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Garnish-Lemon.svg"
   },
   {
     "Liquor": "Whiskey",
     "Glassware": "Rocks",
     "Cocktail": "Old Fashioned",
     "Garnish": "Lemon Peel",
-    "Illustration": "assets/svg/Whiskey-Old-Fashioned-Ice-Lemon.svg"
+    "Step1_Liquor_Img": "assets/svg/Whiskey-1.svg",
+    "Step2_Glassware_Img": "assets/svg/Whiskey-Rocks.svg",
+    "Step3_Cocktail_Img": "assets/svg/Whiskey-Old-Fashioned-Ice.svg",
+    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Old-Fashioned-Ice-Lemon.svg"
   },
   {
     "Liquor": "Whiskey",
     "Glassware": "Rocks",
     "Cocktail": "Whiskey Sour",
     "Garnish": "Lemon Peel",
-    "Illustration": "assets/svg/Whiskey-Whiskey Sour-Lemon.svg"
+    "Step1_Liquor_Img": "assets/svg/Whiskey-1.svg",
+    "Step2_Glassware_Img": "assets/svg/Whiskey-Rocks.svg",
+    "Step3_Cocktail_Img": "assets/svg/Whiskey-Whiskey Sour.svg",
+    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Whiskey Sour-Lemon.svg"
   },
   {
     "Liquor": "Gin",
     "Glassware": "Rocks",
     "Cocktail": "Bramble",
     "Garnish": "Blackberry",
-    "Illustration": ""
+    "Step1_Liquor_Img": "",
+    "Step2_Glassware_Img": "",
+    "Step3_Cocktail_Img": "",
+    "Step4_FinalDrink_Img": ""
   },
   {
     "Liquor": "Gin",
     "Glassware": "Rocks",
     "Cocktail": "Bramble",
     "Garnish": "Lemon Peel",
-    "Illustration": ""
+    "Step1_Liquor_Img": "",
+    "Step2_Glassware_Img": "",
+    "Step3_Cocktail_Img": "",
+    "Step4_FinalDrink_Img": ""
   },
   {
     "Liquor": "Gin",
     "Glassware": "Rocks",
     "Cocktail": "Enzoni",
     "Garnish": "Green Grape",
-    "Illustration": ""
+    "Step1_Liquor_Img": "",
+    "Step2_Glassware_Img": "",
+    "Step3_Cocktail_Img": "",
+    "Step4_FinalDrink_Img": ""
   },
   {
     "Liquor": "Gin",
     "Glassware": "Rocks",
     "Cocktail": "Negroni",
     "Garnish": "Orange Twist",
-    "Illustration": ""
+    "Step1_Liquor_Img": "",
+    "Step2_Glassware_Img": "",
+    "Step3_Cocktail_Img": "",
+    "Step4_FinalDrink_Img": ""
   },
   {
     "Liquor": "Gin",
     "Glassware": "Coupe",
     "Cocktail": "Bronx",
     "Garnish": "Orange Twist",
-    "Illustration": ""
+    "Step1_Liquor_Img": "",
+    "Step2_Glassware_Img": "",
+    "Step3_Cocktail_Img": "",
+    "Step4_FinalDrink_Img": ""
   },
   {
     "Liquor": "Gin",
     "Glassware": "Coupe",
     "Cocktail": "The Last Word",
     "Garnish": "Brandied Cherry",
-    "Illustration": ""
+    "Step1_Liquor_Img": "",
+    "Step2_Glassware_Img": "",
+    "Step3_Cocktail_Img": "",
+    "Step4_FinalDrink_Img": ""
   },
   {
     "Liquor": "Gin",
     "Glassware": "Coupe",
     "Cocktail": "Water Lily",
     "Garnish": "Lemon Twist",
-    "Illustration": ""
+    "Step1_Liquor_Img": "",
+    "Step2_Glassware_Img": "",
+    "Step3_Cocktail_Img": "",
+    "Step4_FinalDrink_Img": ""
   },
   {
     "Liquor": "Gin",
     "Glassware": "Martini",
     "Cocktail": "Dirty Martini",
     "Garnish": "Olives",
-    "Illustration": ""
+    "Step1_Liquor_Img": "",
+    "Step2_Glassware_Img": "",
+    "Step3_Cocktail_Img": "",
+    "Step4_FinalDrink_Img": ""
   },
   {
     "Liquor": "Gin",
     "Glassware": "Martini",
     "Cocktail": "Dry Martini",
     "Garnish": "Lemon Twist",
-    "Illustration": ""
+    "Step1_Liquor_Img": "",
+    "Step2_Glassware_Img": "",
+    "Step3_Cocktail_Img": "",
+    "Step4_FinalDrink_Img": ""
   },
   {
     "Liquor": "Gin",
     "Glassware": "Martini",
     "Cocktail": "Dry Martini",
     "Garnish": "Olives",
-    "Illustration": ""
+    "Step1_Liquor_Img": "",
+    "Step2_Glassware_Img": "",
+    "Step3_Cocktail_Img": "",
+    "Step4_FinalDrink_Img": ""
   }
 ]
