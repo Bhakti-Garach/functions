@@ -1,150 +1,128 @@
-// FILTER
+let allDrinks = [];
+let selection = {
+  liquor: null,
+  glassware: null,
+  cocktail: null,
+  garnish: null,
+};
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Variables to store selections
-    let selectedLiquor = null;
-    let selectedGlassware = null;
-    let selectedIngredient = null;
-    let selectedGarnish = null;
-  
-    // Liquor selection
-    const liquorButtons = document.querySelectorAll('.liquor-option');
-    liquorButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        selectedLiquor = this.getAttribute('data-liquor');
-        
-        // Mark the selected liquor
-        liquorButtons.forEach(btn => btn.classList.remove('selected'));
-        this.classList.add('selected');
-        
-        // Show the corresponding glassware options
-        showGlasswareOptions(selectedLiquor);
-      });
-    });
-  
-    // Glassware selection
-    const glasswareSection = document.getElementById('glassware-selection');
-    const glasswareButtons = glasswareSection.querySelectorAll('.glassware-option');
-    glasswareButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        selectedGlassware = this.getAttribute('data-glassware') || this.textContent;
-        
-        // Mark the selected glassware
-        glasswareButtons.forEach(btn => btn.classList.remove('selected'));
-        this.classList.add('selected');
-        
-        // Show ingredient options based on the selected liquor
-        showIngredientOptions(selectedLiquor);
-      });
-    });
-  
-    // Ingredient selection
-    const ingredientSection = document.getElementById('ingredient-selection');
-    const ingredientButtons = ingredientSection.querySelectorAll('.ingredient-option');
-    ingredientButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        selectedIngredient = this.getAttribute('data-ingredient') || this.textContent;
-        
-        // Mark the selected ingredient
-        ingredientButtons.forEach(btn => btn.classList.remove('selected'));
-        this.classList.add('selected');
-        
-        // Show garnish options
-        showGarnishOptions(selectedLiquor);
-      });
-    });
-  
-    // Garnish selection
-    const garnishSection = document.getElementById('garnish-selection');
-    const garnishButtons = garnishSection.querySelectorAll('.garnish-option');
-    garnishButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        selectedGarnish = this.getAttribute('data-garnish') || this.textContent;
-        
-        // Mark the selected garnish
-        garnishButtons.forEach(btn => btn.classList.remove('selected'));
-        this.classList.add('selected');
-        
-        console.log("Drink Complete:", selectedLiquor, selectedGlassware, selectedIngredient, selectedGarnish);
-      });
-    });
-  
-    // Functions to show the next sections based on the liquor type
-    function showGlasswareOptions(liquorType) {
-      const glasswareSection = document.getElementById('glassware-selection');
-      glasswareSection.classList.remove('hidden');
-  
-      // Filter glassware options based on liquor
-      const glasswareButtons = glasswareSection.querySelectorAll('.glassware-option');
-      glasswareButtons.forEach(button => {
-        if (button.getAttribute('data-liquor') === liquorType) {
-          button.classList.remove('hidden');
-        } else {
-          button.classList.add('hidden');
-        }
-      });
-  
-      // Hide lower steps
-      hideSection('ingredient-selection');
-      hideSection('garnish-selection');
-    }
-  
-    function showIngredientOptions(liquorType) {
-      const ingredientSection = document.getElementById('ingredient-selection');
-      ingredientSection.classList.remove('hidden');
-  
-      // Filter ingredient options based on liquor
-      const ingredientButtons = ingredientSection.querySelectorAll('.ingredient-option');
-      ingredientButtons.forEach(button => {
-        if (button.getAttribute('data-liquor') === liquorType) {
-          button.classList.remove('hidden');
-        } else {
-          button.classList.add('hidden');
-        }
-      });
-  
-      // Hide garnish section until an ingredient is chosen
-      hideSection('garnish-selection');
-    }
-  
-    function showGarnishOptions(liquorType) {
-      const garnishSection = document.getElementById('garnish-selection');
-      garnishSection.classList.remove('hidden');
-  
-      // Filter garnish options based on liquor
-      const garnishButtons = garnishSection.querySelectorAll('.garnish-option');
-      garnishButtons.forEach(button => {
-        if (button.getAttribute('data-liquor') === liquorType) {
-          button.classList.remove('hidden');
-        } else {
-          button.classList.add('hidden');
-        }
-      });
-    }
-  
-    function hideSection(sectionId) {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.classList.add('hidden');
-      }
-    }
+fetch("assets/data.json")
+  .then(res => res.json())
+  .then(data => {
+    allDrinks = data;
+    renderOptions("liquor", getUnique(data, "Liquor"));
   });
 
+function getUnique(arr, key) {
+  return [...new Set(arr.map(item => item[key]))];
+}
 
+function renderOptions(step, options) {
+  const container = document.getElementById(`${step}-buttons`);
+  container.innerHTML = "";
 
+  options.forEach(opt => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = opt;
+    btn.dataset.value = opt;
 
-// JSON
+    btn.addEventListener("click", () => {
+      const siblings = container.querySelectorAll("button");
+      siblings.forEach(b => b.classList.remove("selected"));
+      btn.classList.add("selected");
+      selection[step] = opt;
+      handleNextStep(step);
+    });
 
-// Fetch gets your (local) JSON file…
-// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-fetch('assets/data.json')
-	.then(response => response.json())
-	.then(data => {
-		// And passes the data to the function, above!
-		renderItems(data)
-	})
+    container.appendChild(btn);
+  });
 
-    console.log('data')
+  document.getElementById(`${step}-field`).classList.remove("hidden");
+}
+
+function handleNextStep(currentStep) {
+  if (currentStep === "liquor") {
+    const filtered = allDrinks.filter(item => item.Liquor === selection.liquor);
+    const glasswareOptions = getUnique(filtered, "Glassware");
+    renderOptions("glassware", glasswareOptions);
+  }
+
+  if (currentStep === "glassware") {
+    const filtered = allDrinks.filter(
+      item => item.Liquor === selection.liquor && item.Glassware === selection.glassware
+    );
+    const cocktailOptions = getUnique(filtered, "Cocktail");
+    renderOptions("cocktail", cocktailOptions);
+  }
+
+  if (currentStep === "cocktail") {
+    const filtered = allDrinks.filter(
+      item =>
+        item.Liquor === selection.liquor &&
+        item.Glassware === selection.glassware &&
+        item.Cocktail === selection.cocktail
+    );
+    const garnishOptions = getUnique(filtered, "Garnish");
+    renderOptions("garnish", garnishOptions);
+  }
+
+  if (currentStep === "garnish") {
+    document.getElementById("final-buttons").classList.remove("hidden");
+    showIllustration();
+  }
+}
+
+function showIllustration() {
+  const result = findSelectedDrink();
+  if (result) {
+    const illustration = document.getElementById("illustration");
+    if (result.Illustration && result.Illustration.trim() !== "") {
+      illustration.src = result.Illustration;
+      illustration.alt = `${result.Cocktail} with ${result.Garnish}`;
+      illustration.classList.remove("hidden");
+    } else {
+      illustration.classList.add("hidden");
+    }
+
+    document.getElementById("drink-name").textContent = result.Cocktail;
+    document.getElementById("result").classList.remove("hidden");
+  }
+}
+
+function findSelectedDrink() {
+  return allDrinks.find(
+    item =>
+      item.Liquor === selection.liquor &&
+      item.Glassware === selection.glassware &&
+      item.Cocktail === selection.cocktail &&
+      item.Garnish === selection.garnish
+  );
+}
+
+function openModal(title, content) {
+    document.getElementById("modal-title").textContent = title;
+    document.getElementById("modal-content").textContent = content;
+    document.getElementById("modal-overlay").classList.add("show");
+  }
   
-// BOX MODAL
-// ANIMATION
+  function closeModal() {
+    document.getElementById("modal-overlay").classList.remove("show");
+  }
+  
+
+document.getElementById("learn-more-btn").addEventListener("click", () => {
+  const result = findSelectedDrink();
+  openModal("Learn More", result?.["Learn More"] || "More details coming soon...");
+});
+
+document.getElementById("recipe-btn").addEventListener("click", () => {
+  const result = findSelectedDrink();
+  openModal("Recipe", result?.Recipe || "Recipe coming soon...");
+});
+
+document.getElementById("modal-overlay").addEventListener("click", function (e) {
+  if (e.target === this) {
+    closeModal();
+  }
+});
