@@ -74,18 +74,30 @@ function renderOptions(step, options) {
 // }
 
 function handleNextStep(currentStep) {
+    // Reset steps after current
+    const steps = ["liquor", "glassware", "cocktail", "garnish"];
+    const currentIndex = steps.indexOf(currentStep);
+  
+    for (let i = currentIndex + 1; i < steps.length; i++) {
+      selection[steps[i]] = null;
+      document.getElementById(`${steps[i]}-field`).classList.add("hidden");
+      document.getElementById(`${steps[i]}-buttons`).innerHTML = "";
+    }
+  
+    // Hide final buttons
+    document.getElementById("final-buttons").classList.add("hidden");
+  
+    // Re-render next step options
     if (currentStep === "liquor") {
       const filtered = allDrinks.filter(item => item.Liquor === selection.liquor);
-      const glasswareOptions = getUnique(filtered, "Glassware");
-      renderOptions("glassware", glasswareOptions);
+      renderOptions("glassware", getUnique(filtered, "Glassware"));
     }
   
     if (currentStep === "glassware") {
       const filtered = allDrinks.filter(
         item => item.Liquor === selection.liquor && item.Glassware === selection.glassware
       );
-      const cocktailOptions = getUnique(filtered, "Cocktail");
-      renderOptions("cocktail", cocktailOptions);
+      renderOptions("cocktail", getUnique(filtered, "Cocktail"));
     }
   
     if (currentStep === "cocktail") {
@@ -95,16 +107,16 @@ function handleNextStep(currentStep) {
           item.Glassware === selection.glassware &&
           item.Cocktail === selection.cocktail
       );
-      const garnishOptions = getUnique(filtered, "Garnish");
-      renderOptions("garnish", garnishOptions);
+      renderOptions("garnish", getUnique(filtered, "Garnish"));
     }
   
     if (currentStep === "garnish") {
       document.getElementById("final-buttons").classList.remove("hidden");
     }
   
-    updateIllustration(); // 👈 NEW: Try to show the most complete match so far
+    updateIllustration(); 
   }
+  
   
 
 // function showIllustration() {
