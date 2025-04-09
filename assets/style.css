@@ -258,3 +258,36 @@
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
   }
+
+
+/* FILTER DROP-DOWN */
+.collapsible-legend {
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    transition: color 0.3s ease;
+  }
+  
+  .collapsible-legend:hover {
+    color: var(--secondary-color);
+  }
+  
+  .collapsible-legend::after {
+    content: "▾";
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .collapsible-legend.active::after {
+    transform: rotate(180deg);
+  }
+  
+  
+  
