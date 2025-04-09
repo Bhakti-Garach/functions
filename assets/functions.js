@@ -17,29 +17,69 @@ function getUnique(arr, key) {
   return [...new Set(arr.map(item => item[key]))];
 }
 
+// function renderOptions(step, options) {
+//   const container = document.getElementById(`${step}-buttons`);
+//   container.innerHTML = "";
+
+//   options.forEach(opt => {
+//     const btn = document.createElement("button");
+//     btn.type = "button";
+//     btn.textContent = opt;
+//     btn.dataset.value = opt;
+
+//     btn.addEventListener("click", () => {
+//       const siblings = container.querySelectorAll("button");
+//       siblings.forEach(b => b.classList.remove("selected"));
+//       btn.classList.add("selected");
+//       selection[step] = opt;
+//       handleNextStep(step);
+//     });
+
+//     container.appendChild(btn);
+//   });
+
+//   document.getElementById(`${step}-field`).classList.remove("hidden");
+// }
+
 function renderOptions(step, options) {
-  const container = document.getElementById(`${step}-buttons`);
-  container.innerHTML = "";
-
-  options.forEach(opt => {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.textContent = opt;
-    btn.dataset.value = opt;
-
-    btn.addEventListener("click", () => {
-      const siblings = container.querySelectorAll("button");
-      siblings.forEach(b => b.classList.remove("selected"));
-      btn.classList.add("selected");
-      selection[step] = opt;
-      handleNextStep(step);
+    let container = document.getElementById(`${step}-buttons`);
+    container.innerHTML = "";
+  
+    options.forEach(option => {
+      let btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = option;
+      btn.dataset.value = option;
+  
+      btn.addEventListener("click", () => {
+        // Update selection and button styles
+        container.querySelectorAll("button").forEach(b => b.classList.remove("selected"));
+        btn.classList.add("selected");
+        selection[step] = option;
+  
+        // Collapse all fieldsets
+        document.querySelectorAll(".fieldset-content").forEach(c => c.classList.add("hidden"));
+        document.querySelectorAll(".collapsible-legend").forEach(l => l.classList.remove("active"));
+  
+        // Show next step and expand it
+        let steps = ["liquor", "glassware", "cocktail", "garnish"];
+        let nextStep = steps[steps.indexOf(step) + 1];
+        if (nextStep) {
+          document.getElementById(`${nextStep}-field`).classList.remove("hidden");
+          document.querySelector(`#${nextStep}-field .fieldset-content`)?.classList.remove("hidden");
+          document.querySelector(`#${nextStep}-field .collapsible-legend`)?.classList.add("active");
+        }
+  
+        handleNextStep(step);
+      });
+  
+      container.appendChild(btn);
     });
-
-    container.appendChild(btn);
-  });
-
-  document.getElementById(`${step}-field`).classList.remove("hidden");
-}
+  
+    document.getElementById(`${step}-field`).classList.remove("hidden");
+  }
+  
+  
 
 // function handleNextStep(currentStep) {
 //   if (currentStep === "liquor") {
@@ -218,3 +258,25 @@ document.getElementById("modal-overlay").addEventListener("click", function (e) 
     closeModal();
   }
 });
+
+
+// FILTER DROP-DOWN
+
+document.querySelectorAll(".collapsible-legend").forEach(legend => {
+    legend.addEventListener("click", () => {
+      // Close all .fieldset-content sections
+      document.querySelectorAll(".fieldset-content").forEach(section => {
+        section.classList.add("hidden");
+      });
+  
+      // Remove active class from all legends
+      document.querySelectorAll(".collapsible-legend").forEach(el => el.classList.remove("active"));
+  
+      // Open the clicked one
+      const content = legend.parentElement.querySelector(".fieldset-content");
+      content.classList.remove("hidden");
+      legend.classList.add("active");
+    });
+  });
+  
+   
