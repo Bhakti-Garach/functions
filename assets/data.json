@@ -4,35 +4,97 @@
     "Glassware": "Coupe",
     "Cocktail": "Manhattan",
     "Garnish": "Maraschino Cherry",
-    "Illustration": "",
-    "Learn More": "The Manhattan has managed to remain one of the most popular cocktails in the world for well over a century. A cominination of whiskey, sweet vermouth, bitters and a maraschino cherry garnish, this drink embodies the classic, spirit-forward, and aromatic school of cocktails.",
-    "Recipe": "ICE CUBES\nWHISKEY\nSWEET VERMOUTH\n2 DASHES OF ANGOSTURA BITTER"
+    "Illustration": "assets/svg/Whiskey-Garnish-Maraschino-Cherry.svg"
   },
   {
     "Liquor": "Whiskey",
     "Glassware": "Coupe",
     "Cocktail": "Manhattan",
-    "Garnish": "Lemon",
-    "Illustration": "",
-    "Learn More": "The Manhattan has managed to remain one of the most popular cocktails in the world for well over a century. A cominination of whiskey, sweet vermouth, bitters and a maraschino cherry garnish, this drink embodies the classic, spirit-forward, and aromatic school of cocktails.",
-    "Recipe": "ICE CUBES\nWHISKEY\nSWEET VERMOUTH\n2 DASHES OF ANGOSTURA BITTER"
+    "Garnish": "Lemon Peel",
+    "Illustration": "assets/svg/Whiskey-Garnish-Lemon.svg"
   },
   {
     "Liquor": "Whiskey",
     "Glassware": "Rocks",
-    "Cocktail": "Manhattan",
-    "Garnish": "Maraschino Cherry",
-    "Illustration": "",
-    "Learn More": "The Manhattan has managed to remain one of the most popular cocktails in the world for well over a century. A cominination of whiskey, sweet vermouth, bitters and a maraschino cherry garnish, this drink embodies the classic, spirit-forward, and aromatic school of cocktails.",
-    "Recipe": "ICE CUBES\nWHISKEY\nSWEET VERMOUTH\n2 DASHES OF ANGOSTURA BITTER"
+    "Cocktail": "Old Fashioned",
+    "Garnish": "Lemon Peel",
+    "Illustration": "assets/svg/Whiskey-Old-Fashioned-Ice-Lemon.svg"
   },
   {
     "Liquor": "Whiskey",
     "Glassware": "Rocks",
-    "Cocktail": "Manhattan",
-    "Garnish": "Lemon",
-    "Illustration": "",
-    "Learn More": "The Manhattan has managed to remain one of the most popular cocktails in the world for well over a century. A cominination of whiskey, sweet vermouth, bitters and a maraschino cherry garnish, this drink embodies the classic, spirit-forward, and aromatic school of cocktails.",
-    "Recipe": "ICE CUBES\nWHISKEY\nSWEET VERMOUTH\n2 DASHES OF ANGOSTURA BITTER"
+    "Cocktail": "Whiskey Sour",
+    "Garnish": "Lemon Peel",
+    "Illustration": "assets/svg/Whiskey-Whiskey Sour-Lemon.svg"
+  },
+  {
+    "Liquor": "Gin",
+    "Glassware": "Rocks",
+    "Cocktail": "Bramble",
+    "Garnish": "Blackberry",
+    "Illustration": ""
+  },
+  {
+    "Liquor": "Gin",
+    "Glassware": "Rocks",
+    "Cocktail": "Bramble",
+    "Garnish": "Lemon Peel",
+    "Illustration": ""
+  },
+  {
+    "Liquor": "Gin",
+    "Glassware": "Rocks",
+    "Cocktail": "Enzoni",
+    "Garnish": "Green Grape",
+    "Illustration": ""
+  },
+  {
+    "Liquor": "Gin",
+    "Glassware": "Rocks",
+    "Cocktail": "Negroni",
+    "Garnish": "Orange Twist",
+    "Illustration": ""
+  },
+  {
+    "Liquor": "Gin",
+    "Glassware": "Coupe",
+    "Cocktail": "Bronx",
+    "Garnish": "Orange Twist",
+    "Illustration": ""
+  },
+  {
+    "Liquor": "Gin",
+    "Glassware": "Coupe",
+    "Cocktail": "The Last Word",
+    "Garnish": "Brandied Cherry",
+    "Illustration": ""
+  },
+  {
+    "Liquor": "Gin",
+    "Glassware": "Coupe",
+    "Cocktail": "Water Lily",
+    "Garnish": "Lemon Twist",
+    "Illustration": ""
+  },
+  {
+    "Liquor": "Gin",
+    "Glassware": "Martini",
+    "Cocktail": "Dirty Martini",
+    "Garnish": "Olives",
+    "Illustration": ""
+  },
+  {
+    "Liquor": "Gin",
+    "Glassware": "Martini",
+    "Cocktail": "Dry Martini",
+    "Garnish": "Lemon Twist",
+    "Illustration": ""
+  },
+  {
+    "Liquor": "Gin",
+    "Glassware": "Martini",
+    "Cocktail": "Dry Martini",
+    "Garnish": "Olives",
+    "Illustration": ""
   }
 ]
