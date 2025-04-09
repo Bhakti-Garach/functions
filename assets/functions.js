@@ -41,54 +41,134 @@ function renderOptions(step, options) {
   document.getElementById(`${step}-field`).classList.remove("hidden");
 }
 
+// function handleNextStep(currentStep) {
+//   if (currentStep === "liquor") {
+//     const filtered = allDrinks.filter(item => item.Liquor === selection.liquor);
+//     const glasswareOptions = getUnique(filtered, "Glassware");
+//     renderOptions("glassware", glasswareOptions);
+//   }
+
+//   if (currentStep === "glassware") {
+//     const filtered = allDrinks.filter(
+//       item => item.Liquor === selection.liquor && item.Glassware === selection.glassware
+//     );
+//     const cocktailOptions = getUnique(filtered, "Cocktail");
+//     renderOptions("cocktail", cocktailOptions);
+//   }
+
+//   if (currentStep === "cocktail") {
+//     const filtered = allDrinks.filter(
+//       item =>
+//         item.Liquor === selection.liquor &&
+//         item.Glassware === selection.glassware &&
+//         item.Cocktail === selection.cocktail
+//     );
+//     const garnishOptions = getUnique(filtered, "Garnish");
+//     renderOptions("garnish", garnishOptions);
+//   }
+
+//   if (currentStep === "garnish") {
+//     document.getElementById("final-buttons").classList.remove("hidden");
+//     showIllustration();
+//   }
+// }
+
 function handleNextStep(currentStep) {
-  if (currentStep === "liquor") {
-    const filtered = allDrinks.filter(item => item.Liquor === selection.liquor);
-    const glasswareOptions = getUnique(filtered, "Glassware");
-    renderOptions("glassware", glasswareOptions);
+    if (currentStep === "liquor") {
+      const filtered = allDrinks.filter(item => item.Liquor === selection.liquor);
+      const glasswareOptions = getUnique(filtered, "Glassware");
+      renderOptions("glassware", glasswareOptions);
+    }
+  
+    if (currentStep === "glassware") {
+      const filtered = allDrinks.filter(
+        item => item.Liquor === selection.liquor && item.Glassware === selection.glassware
+      );
+      const cocktailOptions = getUnique(filtered, "Cocktail");
+      renderOptions("cocktail", cocktailOptions);
+    }
+  
+    if (currentStep === "cocktail") {
+      const filtered = allDrinks.filter(
+        item =>
+          item.Liquor === selection.liquor &&
+          item.Glassware === selection.glassware &&
+          item.Cocktail === selection.cocktail
+      );
+      const garnishOptions = getUnique(filtered, "Garnish");
+      renderOptions("garnish", garnishOptions);
+    }
+  
+    if (currentStep === "garnish") {
+      document.getElementById("final-buttons").classList.remove("hidden");
+    }
+  
+    updateIllustration(); // 👈 NEW: Try to show the most complete match so far
   }
+  
 
-  if (currentStep === "glassware") {
-    const filtered = allDrinks.filter(
-      item => item.Liquor === selection.liquor && item.Glassware === selection.glassware
-    );
-    const cocktailOptions = getUnique(filtered, "Cocktail");
-    renderOptions("cocktail", cocktailOptions);
-  }
+// function showIllustration() {
+//   const result = findSelectedDrink();
+//   if (result) {
+//     const illustration = document.getElementById("illustration");
+//     if (result.Illustration && result.Illustration.trim() !== "") {
+//       illustration.src = result.Illustration;
+//       illustration.alt = `${result.Cocktail} with ${result.Garnish}`;
+//       illustration.classList.remove("hidden");
+//     } else {
+//       illustration.classList.add("hidden");
+//     }
 
-  if (currentStep === "cocktail") {
-    const filtered = allDrinks.filter(
-      item =>
-        item.Liquor === selection.liquor &&
-        item.Glassware === selection.glassware &&
-        item.Cocktail === selection.cocktail
-    );
-    const garnishOptions = getUnique(filtered, "Garnish");
-    renderOptions("garnish", garnishOptions);
-  }
+//     document.getElementById("drink-name").textContent = result.Cocktail;
+//     document.getElementById("result").classList.remove("hidden");
+//   }
+// }
 
-  if (currentStep === "garnish") {
-    document.getElementById("final-buttons").classList.remove("hidden");
-    showIllustration();
-  }
-}
-
-function showIllustration() {
-  const result = findSelectedDrink();
-  if (result) {
+function updateIllustration() {
     const illustration = document.getElementById("illustration");
-    if (result.Illustration && result.Illustration.trim() !== "") {
-      illustration.src = result.Illustration;
-      illustration.alt = `${result.Cocktail} with ${result.Garnish}`;
+    const result = allDrinks.find(item =>
+      item.Liquor === selection.liquor &&
+      (!selection.glassware || item.Glassware === selection.glassware) &&
+      (!selection.cocktail || item.Cocktail === selection.cocktail) &&
+      (!selection.garnish || item.Garnish === selection.garnish)
+    );
+  
+    if (!result) {
+      illustration.classList.add("hidden");
+      return;
+    }
+  
+    let imgSrc = "";
+    let altText = "";
+  
+    if (selection.garnish) {
+      imgSrc = result.Step4_FinalDrink_Img;
+      altText = `${result.Cocktail} with ${result.Garnish}`;
+    } else if (selection.cocktail) {
+      imgSrc = result.Step3_Cocktail_Img;
+      altText = result.Cocktail;
+    } else if (selection.glassware) {
+      imgSrc = result.Step2_Glassware_Img;
+      altText = result.Glassware;
+    } else if (selection.liquor) {
+      imgSrc = result.Step1_Liquor_Img;
+      altText = result.Liquor;
+    }
+  
+    if (imgSrc && imgSrc.trim() !== "") {
+      illustration.src = imgSrc;
+      illustration.alt = altText;
       illustration.classList.remove("hidden");
     } else {
       illustration.classList.add("hidden");
     }
-
-    document.getElementById("drink-name").textContent = result.Cocktail;
+  
     document.getElementById("result").classList.remove("hidden");
+    document.getElementById("drink-name").textContent = result?.Cocktail || "";
   }
-}
+  
+  
+  
 
 function findSelectedDrink() {
   return allDrinks.find(
