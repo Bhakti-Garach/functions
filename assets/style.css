@@ -170,4 +170,91 @@
   .hidden {
     display: none;
   }
+
+/* BASE BUTTON STYLE */
+.button-group button {
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+  }
   
+  /* Hover State */
+  .button-group button:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  /* Selected State */
+  .button-group button.selected {
+    background-color: black;
+    color: white;
+    border-color: black;
+  }
+  
+/* ILLUSTRATION */
+#illustration {
+    max-width: 300px;
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  
+/* BOX MODAL */
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+  }
+  
+  #modal-overlay.show {
+    display: flex;
+  }
+  
+  
+  /* Modal Box */
+  .modal-box {
+    background: white;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 16px;
+    font-family: var(--paragraph-font);
+    position: relative;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
