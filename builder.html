@@ -19,25 +19,38 @@
             <h1>To build your drink, select one of each:</h1>
             
             <form id="drink-builder-form">
-                <fieldset id="liquor-field">
-                  <legend>Step 1: Choose Liquor</legend>
-                  <div id="liquor-buttons" class="button-group"></div>
+             <!-- LIQUOR -->
+            <div class="fieldset-wrapper">
+                <div class="collapsible-legend">1. LIQUOR</div>
+                <fieldset id="liquor-field" class="fieldset-content">
+                <div id="liquor-buttons" class="button-group"></div>
                 </fieldset>
-        
-                <fieldset id="glassware-field" class="hidden">
-                  <legend>Step 2: Choose Glassware</legend>
-                  <div id="glassware-buttons" class="button-group"></div>
+            </div>
+            
+            <!-- GLASSWARE -->
+            <div class="fieldset-wrapper">
+                <div class="collapsible-legend">2. GLASSWARE</div>
+                <fieldset id="glassware-field" class="fieldset-content hidden">
+                <div id="glassware-buttons" class="button-group"></div>
                 </fieldset>
-        
-                <fieldset id="cocktail-field" class="hidden">
-                  <legend>Step 3: Choose Cocktail</legend>
-                  <div id="cocktail-buttons" class="button-group"></div>
+            </div>
+            
+            <!-- COCKTAIL -->
+            <div class="fieldset-wrapper">
+                <div class="collapsible-legend">3. COCKTAIL</div>
+                <fieldset id="cocktail-field" class="fieldset-content hidden">
+                <div id="cocktail-buttons" class="button-group"></div>
                 </fieldset>
-        
-                <fieldset id="garnish-field" class="hidden">
-                  <legend>Step 4: Choose Garnish</legend>
-                  <div id="garnish-buttons" class="button-group"></div>
+            </div>
+            
+            <!-- GARNISH -->
+            <div class="fieldset-wrapper">
+                <div class="collapsible-legend">4. GARNISH</div>
+                <fieldset id="garnish-field" class="fieldset-content hidden">
+                <div id="garnish-buttons" class="button-group"></div>
                 </fieldset>
+            </div>
+  
               </form>
               
               <!-- ILLUSTRATION -->
