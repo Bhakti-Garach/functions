@@ -1,3 +1,4 @@
+// JSON file fetch
 let allDrinks = [];
 let selection = {
   liquor: null,
