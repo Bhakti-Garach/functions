@@ -251,10 +251,13 @@ function openModal(title, content) {
   }
   
 
-document.getElementById("learn-more-btn").addEventListener("click", () => {
-  const result = findSelectedDrink();
-  openModal(result?.["Learn More"] || "More details coming soon...");
-});
+  document.getElementById("learn-more-btn").addEventListener("click", () => {
+    const result = findSelectedDrink();
+    let cocktailName = result?.Cocktail || "This Cocktail";
+    let learnMoreText = result?.["Learn More"] || "More details coming soon...";
+    openModal(`${cocktailName}`, learnMoreText);
+  });
+  
 
 // document.getElementById("recipe-btn").addEventListener("click", () => {
 //   const result = findSelectedDrink();
