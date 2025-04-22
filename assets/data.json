@@ -7,7 +7,9 @@
     "Step1_Liquor_Img": "assets/svg/Whiskey.svg",
     "Step2_Glassware_Img": "assets/svg/Whiskey-Coupe.svg",
     "Step3_Cocktail_Img": "assets/svg/Whiskey-Manhattan.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Garnish-Maraschino-Cherry.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Garnish-Maraschino-Cherry.svg",
+    "Learn More": "Considered a modern classic, this drink was created by London bartender Dick Bradsell around 1989 (he's known for creating the template for the Expresso Martini). The key ingredient, creme de mure, is a blackberry liqueur, which Bradsell said reminded him of foraging for blackberries as a child.",
+    "Recipe": "Ingredients:\nGin 2 oz\nLemon Juice 3/4 oz\nSimple Syrup 1/4 oz\nIce Cubes to shake\nCrushed or Pebble Ice to serve\n\nMethod:\n1. In a cocktail shaker, combine gin, lemon juice, and simple syrup.\n2. Shake with ice\n3. Strain into rocks glass over crushed or pebble ice.\n4. Pour creme de mure on top\n5. Garnish with blackberry and lemon"
   },
   {
     "Liquor": "Whiskey",
@@ -17,7 +19,9 @@
     "Step1_Liquor_Img": "assets/svg/Whiskey.svg",
     "Step2_Glassware_Img": "assets/svg/Whiskey-Coupe.svg",
     "Step3_Cocktail_Img": "assets/svg/Whiskey-Manhattan.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Garnish-Lemon.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Garnish-Lemon.svg",
+    "Learn More": "",
+    "Recipe": ""
   },
   {
     "Liquor": "Whiskey",
@@ -27,7 +31,9 @@
     "Step1_Liquor_Img": "assets/svg/Whiskey.svg",
     "Step2_Glassware_Img": "assets/svg/Whiskey-Coupe.svg",
     "Step3_Cocktail_Img": "assets/svg/Whiskey-Manhattan.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Garnish-Maraschino-Cherry-Lemon.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Garnish-Maraschino-Cherry-Lemon.svg",
+    "Learn More": "",
+    "Recipe": ""
   },
   {
     "Liquor": "Whiskey",
@@ -37,7 +43,9 @@
     "Step1_Liquor_Img": "assets/svg/Whiskey.svg",
     "Step2_Glassware_Img": "assets/svg/Whiskey-Rocks.svg",
     "Step3_Cocktail_Img": "assets/svg/Whiskey-Old-Fashioned-Ice.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Old-Fashioned-Ice-Lemon.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Old-Fashioned-Ice-Lemon.svg",
+    "Learn More": "",
+    "Recipe": ""
   },
   {
     "Liquor": "Whiskey",
@@ -47,7 +55,9 @@
     "Step1_Liquor_Img": "assets/svg/Whiskey.svg",
     "Step2_Glassware_Img": "assets/svg/Whiskey-Rocks.svg",
     "Step3_Cocktail_Img": "assets/svg/Whiskey-Whiskey Sour.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Whiskey Sour-Lemon.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Whiskey-Whiskey Sour-Lemon.svg",
+    "Learn More": "",
+    "Recipe": ""
   },
   {
     "Liquor": "Gin",
@@ -57,7 +67,9 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Rocks.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-Bramble.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-Bramble-Blackberry.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-Bramble-Blackberry.svg",
+    "Learn More": "Considered a modern classic, this drink was created by London bartender Dick Bradsell around 1989 (he's known for creating the template for the Expresso Martini). The key ingredient, creme de mure, is a blackberry liqueur, which Bradsell said reminded him of foraging for blackberries as a child.",
+    "Recipe": "Ingredients:\nGin 2 oz\nLemon Juice 3/4 oz\nSimple Syrup 1/4 oz\nIce Cubes to shake\nCrushed or Pebble Ice to serve\n\nMethod:\n1. In a cocktail shaker, combine gin, lemon juice, and simple syrup.\n2. Shake with ice.\n3. Strain into rocks glass over crushed or pebble ice.\n4. Pour creme de mure on top.\n5. Garnish with blackberry and lemon."
   },
   {
     "Liquor": "Gin",
@@ -67,7 +79,9 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Rocks.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-Bramble.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-Bramble-Lemon Peel.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-Bramble-Lemon Peel.svg",
+    "Learn More": "Considered a modern classic, this drink was created by London bartender Dick Bradsell around 1989 (he's known for creating the template for the Expresso Martini). The key ingredient, creme de mure, is a blackberry liqueur, which Bradsell said reminded him of foraging for blackberries as a child.",
+    "Recipe": "Ingredients:\nGin 2 oz\nLemon Juice 3/4 oz\nSimple Syrup 1/4 oz\nIce Cubes to shake\nCrushed or Pebble Ice to serve\n\nMethod:\n1. In a cocktail shaker, combine gin, lemon juice, and simple syrup.\n2. Shake with ice.\n3. Strain into rocks glass over crushed or pebble ice.\n4. Pour creme de mure on top.\n5. Garnish with blackberry and lemon."
   },
   {
     "Liquor": "Gin",
@@ -77,7 +91,9 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Rocks.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-Bramble.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-Bramble-Blackberry-Lemon Peel.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-Bramble-Blackberry-Lemon Peel.svg",
+    "Learn More": "Considered a modern classic, this drink was created by London bartender Dick Bradsell around 1989 (he's known for creating the template for the Expresso Martini). The key ingredient, creme de mure, is a blackberry liqueur, which Bradsell said reminded him of foraging for blackberries as a child.",
+    "Recipe": "Ingredients:\nGin 2 oz\nLemon Juice 3/4 oz\nSimple Syrup 1/4 oz\nIce Cubes to shake\nCrushed or Pebble Ice to serve\n\nMethod:\n1. In a cocktail shaker, combine gin, lemon juice, and simple syrup.\n2. Shake with ice.\n3. Strain into rocks glass over crushed or pebble ice.\n4. Pour creme de mure on top.\n5. Garnish with blackberry and lemon."
   },
   {
     "Liquor": "Gin",
@@ -87,7 +103,9 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Rocks.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-Enzoni.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-Enzoni-Green Grape.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-Enzoni-Green Grape.svg",
+    "Learn More": "Created by Vincenzo \"Enzo\" Errico at NYC bar Milk & Honey, this drink is a mash-up of a Negroni and a Gin Sour, created in the early 2000s. Think of it as \"Enzo's Negroni,\" and you see the origin of the name. The pink drink is less bitter than a traditional Negroni, leading some to call it an entry point for those getting to know red bitters and aperitivos in general.",
+    "Recipe": "Ingredients:\n5 Green Grapes\nGin 1oz\nCampari 1 oz\nLemon Juice 3/4 oz\nSimple Syrup 1/2 oz\nIce Cubes to shake and to serve\n\nMethod:\n1. In a cocktail shaker, muddle the grapes.\n2. Add the remaining ingredients and shake with ice.\n3. Strain into rocks glass over fresh ice.\n4. Pour creme de mure on top.\n5. Garnish with skewered grapes."
   },
   {
     "Liquor": "Gin",
@@ -97,7 +115,9 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Rocks.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-Negroni.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-Negroni-Orange Twist.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-Negroni-Orange Twist.svg",
+    "Learn More": "According to legend, the ultimate equal-parts drink came into eing when Italian count Camillo Negroni ordered an Americano (Campari, sweet vermouth, sometimes soda water) fortified with gin. If the cocktail seems too sweet or viscous. for your taste, add an extra 1/4 oz of gin.",
+    "Recipe": "Ingredients:\nGin 1oz\nSweet Vermouth 1 oz\nCampari 1 oz\nIce Cubes to stir and to serve\n\nMethod:\n1. Stir all ingredients with ice.\n2. Strain into chilled rocks glass, over fresh ice.\n3. Garnish with orange."
   },
   {
     "Liquor": "Gin",
@@ -107,7 +127,9 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Coupe.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-Bronx.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-Bronx-Orange Twist.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-Bronx-Orange Twist.svg",
+    "Learn More": "Named for one of New York's five boroughs, this is a rare drink that contains orange juice. It was created in the early 1900s by Johnnie Solan, a bartender at NYC's storied Waldorf-Astoria hotel. Not everyone loves this drink – outside of a Mimosa, orange juice can be a tough sell –but others appreciate the structure of a \"Perfect Martini\" within, meaning equal amounts of dry and sweet vermouth.",
+    "Recipe": "Ingredients:\nGin 2 oz\nDry Vermouth 1/4 oz\nSweet Vermouth 1/4 oz\nOrange Juice 1 oz\nOrange Bitters 1 dash\nIce Cubes to shake\n\nMethod:\n1. Shake all ingredients with ice.\n2. Strain into chilled coupe glass.\n3. Garnish with orange twist."
   },
   {
     "Liquor": "Gin",
@@ -117,7 +139,9 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Coupe.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-The Last Word.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-The Last Word-Cherry.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-The Last Word-Cherry.svg",
+    "Learn More": "This venerable cocktail is credited to the Detroit Athletic Club in the early 1920s, although some pros dispute that's where it was created. Not disputed: in the early aughts, late-Seattle bartender Murray Stenson revived the drink when he put it on the menu at his Zig Zag Cafe. It's still beloved today for its equal-parts construction and herbaceous flavor.",
+    "Recipe": "Ingredients:\nGin 3/4 oz\nGreen Chartreuse 3/4 oz\nMaraschino Liqueur 3/4 oz\nLime Juice 3/4 oz\nIce Cubes to shake\n\nMethod:\n1. Shake all ingredients with ice.\n2. Strain into chilled coupe glass.\n3. Garnish with cherry."
   },
   {
     "Liquor": "Gin",
@@ -127,7 +151,9 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Coupe.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-Water Lily.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-Water Lily-Lemon Twist.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-Water Lily-Lemon Twist.svg",
+    "Learn More": "Created in 2007 by Richie Boccato, then a bartender at NYC's Milk & Honey, this delicately floral, lightly sweet drink has a pleasing pale lavender hue. The equal-parts drink was devised for a patron who requested a drink with gin and violet, and named for her middle name: Lillian",
+    "Recipe": "Ingredients:\nGin 3/4 oz\nCreme de violette 3/4 oz\nOrange Liqueur 3/4 oz\nLime Juice 3/4 oz\nIce Cubes to shake\n\nMethod:\n1. Shake all ingredients with ice.\n2. Strain into chilled coupe glass.\n3. Garnish with lemon twist."
   },
   {
     "Liquor": "Gin",
@@ -137,7 +163,9 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Martini.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-Dirty Martini.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-Dirty Martini-Olives.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-Dirty Martini-Olives.svg",
+    "Learn More": "This savory Martini is all about the olives, and the olive brine. For a dirtier Martini, add an extra bar spoon (or more) of brine, and garnish with olives galore. Some superstitions hold that an even number of olives is unlucky, so it's common to see one olive at the bottom of the glass, or three positioned on a spear.",
+    "Recipe": "Ingredients:\nGin 2 oz\nDry Vermouth 1/2 oz\nOlive Brine 1/2 oz\nIce Cubes to stir\n\nMethod:\n1. Stir all ingredients with ice.\n2. Strain into chilled martini glass.\n3. Garnish with olives."
   },
   {
     "Liquor": "Gin",
@@ -147,7 +175,9 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Martini.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-Dirty Martini.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-Dry Martini-Lemon Twist.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-Dry Martini-Lemon Twist.svg",
+    "Learn More": "Just how dry do you like your Martini? A minimal amount of vermouth is what defines \"dry\", but that can range from a scant 1/4 oz to just a few dashes. Some variations call for a quick \"in-and-out,\" meaning the glass is rinsed with a small amount of vermouth, which is then poured out of the glass and discarded before the gin is poured in. Some vermouth should be part of the mix – otherwise it's not techinically a Martini, just a chilled glass of gin.",
+    "Recipe": "Ingredients:\nGin 2 1/2 oz\nDry Vermouth 1/4 oz\nIce Cubes to stir\n\nMethod:\n1. Stir all ingredients with ice.\n2. Strain into chilled martini glass.\n3. Garnish with lemon twist."
   },
   {
     "Liquor": "Gin",
@@ -157,7 +187,9 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Martini.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-Dirty Martini.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-Dry Martini-Olives.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-Dry Martini-Olives.svg",
+    "Learn More": "Just how dry do you like your Martini? A minimal amount of vermouth is what defines \"dry\", but that can range from a scant 1/4 oz to just a few dashes. Some variations call for a quick \"in-and-out,\" meaning the glass is rinsed with a small amount of vermouth, which is then poured out of the glass and discarded before the gin is poured in. Some vermouth should be part of the mix – otherwise it's not techinically a Martini, just a chilled glass of gin.",
+    "Recipe": "Ingredients:\nGin 2 1/2 oz\nDry Vermouth 1/4 oz\nIce Cubes to stir\n\nMethod:\n1. Stir all ingredients with ice.\n2. Strain into chilled martini glass.\n3. Garnish with olives."
   },
   {
     "Liquor": "Gin",
@@ -167,6 +199,8 @@
     "Step1_Liquor_Img": "assets/svg/Gin.svg",
     "Step2_Glassware_Img": "assets/svg/Gin-Martini.svg",
     "Step3_Cocktail_Img": "assets/svg/Gin-Dirty Martini.svg",
-    "Step4_FinalDrink_Img": "assets/svg/Gin-Dry Martini-Lemon Twist-Olives.svg"
+    "Step4_FinalDrink_Img": "assets/svg/Gin-Dry Martini-Lemon Twist-Olives.svg",
+    "Learn More": "Just how dry do you like your Martini? A minimal amount of vermouth is what defines \"dry\", but that can range from a scant 1/4 oz to just a few dashes. Some variations call for a quick \"in-and-out,\" meaning the glass is rinsed with a small amount of vermouth, which is then poured out of the glass and discarded before the gin is poured in. Some vermouth should be part of the mix – otherwise it's not techinically a Martini, just a chilled glass of gin.",
+    "Recipe": "Ingredients:\nGin 2 1/2 oz\nDry Vermouth 1/4 oz\nIce Cubes to stir\n\nMethod:\n1. Stir all ingredients with ice.\n2. Strain into chilled martini glass.\n3. Garnish with lemon twist and olives."
   }
 ]

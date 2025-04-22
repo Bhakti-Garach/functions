@@ -57,6 +57,13 @@ function renderOptions(step, options) {
         container.querySelectorAll("button").forEach(b => b.classList.remove("selected"));
         btn.classList.add("selected");
         selection[step] = option;
+
+
+        // Remove empty state
+        if (step === "liquor") {
+          document.getElementById("empty-state").classList.add("hidden");
+        }
+        
   
         // Collapse all fieldsets
         document.querySelectorAll(".fieldset-content").forEach(c => c.classList.add("hidden"));
