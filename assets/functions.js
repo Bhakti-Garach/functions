@@ -242,7 +242,7 @@ function findSelectedDrink() {
 
 function openModal(title, content) {
     document.getElementById("modal-title").textContent = title;
-    document.getElementById("modal-content").textContent = content;
+    document.getElementById("modal-content").innerHTML = content;
     document.getElementById("modal-overlay").classList.add("show");
   }
   
@@ -253,13 +253,31 @@ function openModal(title, content) {
 
 document.getElementById("learn-more-btn").addEventListener("click", () => {
   const result = findSelectedDrink();
-  openModal("Learn More", result?.["Learn More"] || "More details coming soon...");
+  openModal(result?.["Learn More"] || "More details coming soon...");
 });
+
+// document.getElementById("recipe-btn").addEventListener("click", () => {
+//   const result = findSelectedDrink();
+//   openModal("Recipe", result?.Recipe || "Recipe coming soon...");
+//   recipeText = recipeText
+//     .replace("Ingredients:", "<strong>Ingredients:</strong>")
+//     .replace("Method:", "<strong>Method:</strong>");
+
+//   openModal("Recipe", recipeText);
+// });
 
 document.getElementById("recipe-btn").addEventListener("click", () => {
   const result = findSelectedDrink();
-  openModal("Recipe", result?.Recipe || "Recipe coming soon...");
+  let recipeText = result?.Recipe || "Recipe coming soon...";
+
+  // Add bold tags for headings
+  recipeText = recipeText
+    .replace("Ingredients:", "<strong>Ingredients:</strong>")
+    .replace("Method:", "<strong>Method:</strong>");
+
+  openModal("Recipe", recipeText);
 });
+
 
 document.getElementById("modal-overlay").addEventListener("click", function (e) {
   if (e.target === this) {

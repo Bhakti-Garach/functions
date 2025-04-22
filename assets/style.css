@@ -125,6 +125,28 @@
         padding: var(--spacing);
         }
     }
+
+    @media (min-width: 768px) {
+      .builder-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing);
+        align-items: start;
+      }
+    
+      .illustration-box {
+        margin: 0;
+        width: 100%;
+        height: 70vh;
+      }
+    
+      #drink-builder-form {
+        margin: 0;
+        width: 100%;
+        height: 70vh;
+      }
+    }
+    
     /* MAIN KEYFRAME ANIMATIONS */
     /* FOOTER */
     /* FOOTER MEDIA QUERY */
@@ -284,6 +306,7 @@
     color: var(--primary-color);
     margin-top: 1rem;
     white-space: pre-line;
+    text-transform: uppercase;
   }
   
   .modal-body strong {
