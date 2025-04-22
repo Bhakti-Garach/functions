@@ -8,8 +8,8 @@
     "Step2_Glassware_Img": "assets/svg/Whiskey-Coupe.svg",
     "Step3_Cocktail_Img": "assets/svg/Whiskey-Manhattan.svg",
     "Step4_FinalDrink_Img": "assets/svg/Whiskey-Garnish-Maraschino-Cherry.svg",
-    "Learn More": "Considered a modern classic, this drink was created by London bartender Dick Bradsell around 1989 (he's known for creating the template for the Expresso Martini). The key ingredient, creme de mure, is a blackberry liqueur, which Bradsell said reminded him of foraging for blackberries as a child.",
-    "Recipe": "Ingredients:\nGin 2 oz\nLemon Juice 3/4 oz\nSimple Syrup 1/4 oz\nIce Cubes to shake\nCrushed or Pebble Ice to serve\n\nMethod:\n1. In a cocktail shaker, combine gin, lemon juice, and simple syrup.\n2. Shake with ice\n3. Strain into rocks glass over crushed or pebble ice.\n4. Pour creme de mure on top\n5. Garnish with blackberry and lemon"
+    "Learn More": "The Manhattan has managed to remain one of the most popular cocktails in the world for well over a century. A comibination of whiskey, sweet vermouth, bitters and a maraschino cherry garnish, this drink embodies the classic, spirit-forward, and aromatic school of cocktails.",
+    "Recipe": "Ingredients:\nRye Whiskey 60 ml\nSweet Vermouth  25ml\n2 Dashes of Angostura Bitters\nIce Cubes to stir\n\nMethod:\n1. Add the ice, whiskey, sweet vermouth, and bitters to a mixing glass and stir intil well-chilled.\n2. Shake with ice\n3. Strain into coupe glass.\n5. Garnish with maraschino cherry."
   },
   {
     "Liquor": "Whiskey",
@@ -20,8 +20,8 @@
     "Step2_Glassware_Img": "assets/svg/Whiskey-Coupe.svg",
     "Step3_Cocktail_Img": "assets/svg/Whiskey-Manhattan.svg",
     "Step4_FinalDrink_Img": "assets/svg/Whiskey-Garnish-Lemon.svg",
-    "Learn More": "",
-    "Recipe": ""
+    "Learn More": "The Manhattan has managed to remain one of the most popular cocktails in the world for well over a century. A comibination of whiskey, sweet vermouth, bitters and a maraschino cherry garnish, this drink embodies the classic, spirit-forward, and aromatic school of cocktails.",
+    "Recipe": "Ingredients:\nRye Whiskey 60 ml\nSweet Vermouth  25ml\n2 Dashes of Angostura Bitters\nIce Cubes to stir\n\nMethod:\n1. Add the ice, whiskey, sweet vermouth, and bitters to a mixing glass and stir intil well-chilled.\n2. Shake with ice\n3. Strain into coupe glass.\n5. Garnish with lemon twist."
   },
   {
     "Liquor": "Whiskey",
@@ -32,8 +32,8 @@
     "Step2_Glassware_Img": "assets/svg/Whiskey-Coupe.svg",
     "Step3_Cocktail_Img": "assets/svg/Whiskey-Manhattan.svg",
     "Step4_FinalDrink_Img": "assets/svg/Whiskey-Garnish-Maraschino-Cherry-Lemon.svg",
-    "Learn More": "",
-    "Recipe": ""
+    "Learn More": "The Manhattan has managed to remain one of the most popular cocktails in the world for well over a century. A comibination of whiskey, sweet vermouth, bitters and a maraschino cherry garnish, this drink embodies the classic, spirit-forward, and aromatic school of cocktails.",
+    "Recipe": "Ingredients:\nRye Whiskey 60 ml\nSweet Vermouth  25ml\n2 Dashes of Angostura Bitters\nIce Cubes to stir\n\nMethod:\n1. Add the ice, whiskey, sweet vermouth, and bitters to a mixing glass and stir intil well-chilled.\n2. Shake with ice\n3. Strain into coupe glass.\n5. Garnish with lemon twist and maraschino cherry."
   },
   {
     "Liquor": "Whiskey",
@@ -44,8 +44,8 @@
     "Step2_Glassware_Img": "assets/svg/Whiskey-Rocks.svg",
     "Step3_Cocktail_Img": "assets/svg/Whiskey-Old-Fashioned-Ice.svg",
     "Step4_FinalDrink_Img": "assets/svg/Whiskey-Old-Fashioned-Ice-Lemon.svg",
-    "Learn More": "",
-    "Recipe": ""
+    "Learn More": "The Old Fashioned is one of the oldest known cocktails, dating back to the early 1800s. It’s a simple yet refined drink that highlights the spirit, typically whiskey, sweetened and balanced with bitters and a citrus twist.",
+    "Recipe": "Ingredients:\n2 oz Bourbon or Rye Whiskey\n1/2 tsp Simple Syrup\n2-3 Dashes Angostura Bitters\nOrange Peel\nIce Cubes\n\nMethod:\n1. Muddle sugar and bitters in a rocks glass (or stir if using syrup).\n2. Add whiskey and a large ice cube.\n3. Stir gently until chilled.\n4. Express orange peel over the drink and garnish with it."
   },
   {
     "Liquor": "Whiskey",
@@ -56,8 +56,8 @@
     "Step2_Glassware_Img": "assets/svg/Whiskey-Rocks.svg",
     "Step3_Cocktail_Img": "assets/svg/Whiskey-Whiskey Sour.svg",
     "Step4_FinalDrink_Img": "assets/svg/Whiskey-Whiskey Sour-Lemon.svg",
-    "Learn More": "",
-    "Recipe": ""
+    "Learn More": "The Whiskey Sour is a bright and citrus-forward drink that dates back to at least the 1870s. It's known for its balance of sweet and sour, and sometimes features egg white for a silky texture.",
+    "Recipe": "Ingredients:\n2 oz Bourbon or Rye Whiskey\n3/4 oz Fresh Lemon Juice\n1/2 oz Simple Syrup\n(Optional) 1/2 oz Egg White\nIce Cubes to shake\n\nMethod:\n1. Combine all ingredients in a shaker.\n2. Dry shake first (without ice) if using egg white.\n3. Add ice and shake again.\n4. Strain into rocks glass with fresh ice.\n5. Garnish with lemon peel."
   },
   {
     "Liquor": "Gin",

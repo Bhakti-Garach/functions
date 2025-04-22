@@ -275,6 +275,23 @@
     position: relative;
     animation: fadeIn 0.3s ease-out;
   }
+
+  /* Modal Box Content Style */
+  .modal-body {
+    font-family: var(--paragraph-font);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    white-space: pre-line;
+  }
+  
+  .modal-body strong {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
   
   /* Close Button */
   .close-btn {
