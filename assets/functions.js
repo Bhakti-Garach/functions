@@ -7,6 +7,7 @@ let selection = {
   garnish: null,
 };
 
+// fetch function watching Eric's video
 fetch("assets/data.json")
   .then(res => res.json())
   .then(data => {
@@ -14,6 +15,9 @@ fetch("assets/data.json")
     renderOptions("liquor", getUnique(data, "Liquor"));
   });
 
+// This function takes an array of objects and returns only the unique values for the given key.
+// I use Set here to remove duplicates.
+// Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
 function getUnique(arr, key) {
   return [...new Set(arr.map(item => item[key]))];
 }
@@ -42,8 +46,12 @@ function getUnique(arr, key) {
 //   document.getElementById(`${step}-field`).classList.remove("hidden");
 // }
 
+// This function renders buttons for each option depending on the step (liquor, glassware,cocktail, garnish)
+
 function renderOptions(step, options) {
     let container = document.getElementById(`${step}-buttons`);
+
+    // clear any previous buttons
     container.innerHTML = "";
   
     options.forEach(option => {
@@ -52,10 +60,13 @@ function renderOptions(step, options) {
       btn.textContent = option;
       btn.dataset.value = option;
   
+      // when a user clicks the button
       btn.addEventListener("click", () => {
-        // Update selection and button styles
+        // remove selected class from all buttons and add it to the clicked one
         container.querySelectorAll("button").forEach(b => b.classList.remove("selected"));
         btn.classList.add("selected");
+
+        // save the selected option
         selection[step] = option;
 
 
@@ -78,6 +89,7 @@ function renderOptions(step, options) {
           document.querySelector(`#${nextStep}-field .collapsible-legend`)?.classList.add("active");
         }
   
+        // Move to the next step and update the illustration
         handleNextStep(step);
       });
   
