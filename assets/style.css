@@ -52,7 +52,6 @@
 
     body {
         padding: var(--spacing);
-        height: 100vh;
       }
 
     
@@ -267,6 +266,7 @@
     border-radius: 20px;
     text-align: center;
     min-height: 400px;
+    align-content: center;
   }
   
   #empty-state {
@@ -279,8 +279,28 @@
   #illustration:not(.hidden) + #empty-state {
     display: none;
   }
-  
 
+#empty-state {
+  font-family: var(--heading-font);
+  font-size: var(--h1-font-size);
+  color: var(--secondary-color);
+  font-weight: 300;
+  align-items: center;
+}
+  
+/* LEARN MORE AND RECIPE BUTTONS */
+section #final-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+#final-buttons button {
+  font-family: var(--button-font);
+  font-size: var(--button-font-size);
+  text-transform: uppercase;
+}
   
 /* BOX MODAL */
 #modal-overlay {
@@ -390,4 +410,7 @@
     color: var(--dark-background-color);
     align-items: center;
     text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 1rem;
 }

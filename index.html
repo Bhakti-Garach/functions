@@ -9,7 +9,6 @@
         <link href="assets/touch.png"  rel="apple-touch-icon">
         <meta content="https://bhakti-garach.github.io/functions/assets/meta.png" property="og:image">
 	    <meta content="Black background with white, modernist text of the site title." property="og:image:alt">
-
         <link href="assets/reset.css" rel="stylesheet">
         <link href="assets/style.css" rel="stylesheet">
         <script defer src="assets/functions.js"></script>
@@ -22,21 +21,63 @@
             </nav>
         </header>
         <main>
-            <article class="main-content">
-                <section class="intro">
-                    <h1>The Interactive Drink Builder</h1>
-                    <p>Depending on your mood pick the way you want to explore.</p>
-                </section>
-                <section class="cta-buttons">
-                  <a href="builder.html" class="btn">Build your own drink</a>
-                  <a href="quiz.html" class="btn">Take a quiz</a>
-                  <a href="occasion.html" class="btn">Go by occasion</a>
-                  <a href="surprise.html" class="btn">Surprise me!</a>
-                </section>
-            </article>
+            <div class="builder-grid">
+            <!-- ILLUSTRATION -->
+            <section id="result" class="illustration-box">
+              <p id="empty-state">See your drink making as you select</p>
+              <img id="illustration" class="hidden" alt="Drink Illustration" />
+          </section>
+            
+            <form id="drink-builder-form">
+             <!-- LIQUOR -->
+            <div class="fieldset-wrapper">
+                <div class="collapsible-legend">1. LIQUOR</div>
+                <fieldset id="liquor-field" class="fieldset-content">
+                <div id="liquor-buttons" class="button-group"></div>
+                </fieldset>
+            </div>
+            
+            <!-- GLASSWARE -->
+            <div class="fieldset-wrapper">
+                <div class="collapsible-legend">2. GLASSWARE</div>
+                <fieldset id="glassware-field" class="fieldset-content hidden">
+                <div id="glassware-buttons" class="button-group"></div>
+                </fieldset>
+            </div>
+            
+            <!-- COCKTAIL -->
+            <div class="fieldset-wrapper">
+                <div class="collapsible-legend">3. COCKTAIL</div>
+                <fieldset id="cocktail-field" class="fieldset-content hidden">
+                <div id="cocktail-buttons" class="button-group"></div>
+                </fieldset>
+            </div>
+            
+            <!-- GARNISH -->
+            <div class="fieldset-wrapper">
+                <div class="collapsible-legend">4. GARNISH</div>
+                <fieldset id="garnish-field" class="fieldset-content hidden">
+                <div id="garnish-buttons" class="button-group"></div>
+                </fieldset>
+            </div>
+            </form>
+            <!-- BUTTONS -->
+            <section id="final-buttons" class="hidden button-group">
+              <button id="learn-more-btn" type="button">Learn More</button>
+              <button id="recipe-btn" type="button">View Recipe</button>
+            </section>             
+            <!-- MODAL STRUCTURE -->
+              <div id="modal-overlay" class="hidden">
+                <div class="modal-box">
+                  <button class="close-btn" onclick="closeModal()">×</button>
+                  <h3 id="modal-title"></h3>
+                  <div id="modal-content" class="modal-body"></div>
+                </div>
+              </div>
+            </div>             
         </main>
-        <footer>
-            <p>&copy; 2025 Interactive Drink Builder. All rights reserved.</p>
-        </footer>
-    </body>
+    <footer>
+      <p>&copy; 2025 Interactive Drink Builder | All rights reserved | Design and Developed by Bhakti Garach</p>
+    </footer>
+  </body>
 </html>
